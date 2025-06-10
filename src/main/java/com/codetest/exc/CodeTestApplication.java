@@ -11,6 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import lombok.extern.slf4j.Slf4j;
 
 /**
+ * ===== 6/11 여기 수정 했어 =====
  *  @SpringApplication.run(CodeTestApplication.class, args);
  *  return the running ApplicationContext
  *  > 1.스프링 컨테이너(ApplicationContext)생성 > @Component, @Repoitory, @Contrroller 등을 찾아서 ***빈 등록***> ***의존성 주입***
