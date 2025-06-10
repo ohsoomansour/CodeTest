@@ -36,7 +36,6 @@ public class CodeTestApplication {
 		log.info("ErrorCode.ERROR_NO={}", ErrorCode.ERROR_NO); // ERROR_NO
 		log.info("ErrorCode.ERROR_NO.toString()={}", ErrorCode.ERROR_NO.toString()); // ERROR_NO
 		log.info("ErrorCode.ERROR_NO.toString()={}", ErrorCode.ERROR_YES.getMessage()); // EY 
-
 	}
 
 }
