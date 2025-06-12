@@ -34,10 +34,16 @@ public class CodeTestApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CodeTestApplication.class, args); // Main Entry Point 역할 - 애플리케이션 초기화 실행 
 
-		log.info("ErrorCode.ERROR_YES={}", ErrorCode.ERROR_YES); //ERROR_YES
-		log.info("ErrorCode.ERROR_NO={}", ErrorCode.ERROR_NO); // ERROR_NO
-		log.info("ErrorCode.ERROR_NO.toString()={}", ErrorCode.ERROR_NO.toString()); // ERROR_NO
-		log.info("ErrorCode.ERROR_NO.toString()={}", ErrorCode.ERROR_YES.getMessage()); // EY 
+		System.out.println(Arrays.toString(solution(new int[]{1, -5, 2, 4, 3})));
+		System.out.println(Arrays.toString(solution(new int[]{2, 1, 1, 3, 2, 5, 4})));
+		System.out.println(Arrays.toString(solution(new int[]{6, 1, 7})));
 	}
-
+	// 이 부분을 변경해서 실행해보세요.
+	private static int[] solution(int[] arr) {
+		//복제의 경우
+		int[] clone = arr.clone();
+		Arrays.sort(clone);
+		Arrays.sort(arr);
+		return clone;
+	}
 }
