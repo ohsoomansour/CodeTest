@@ -1,14 +1,8 @@
 package com.codetest.exc;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
-
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import lombok.extern.slf4j.Slf4j;
 
 /**
  * ===== 6/11 여기 수정 했어 =====
@@ -34,16 +28,9 @@ public class CodeTestApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CodeTestApplication.class, args); // Main Entry Point 역할 - 애플리케이션 초기화 실행 
 
-		System.out.println(Arrays.toString(solution(new int[]{1, -5, 2, 4, 3})));
-		System.out.println(Arrays.toString(solution(new int[]{2, 1, 1, 3, 2, 5, 4})));
-		System.out.println(Arrays.toString(solution(new int[]{6, 1, 7})));
+		new StreamArraySort1().solution();
+
 	}
 	// 이 부분을 변경해서 실행해보세요.
-	private static int[] solution(int[] arr) {
-		//복제의 경우
-		int[] clone = arr.clone();
-		Arrays.sort(clone);
-		Arrays.sort(arr);
-		return clone;
-	}
+
 }
