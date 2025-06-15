@@ -18,7 +18,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *  @Bean factory methods: 빈(Bean)을 생성하거나 가져오는 팩토리 메서드 
  *    - Spring에서는 개발자가 직접 객체를 new 해서 생성하는 대신, ***스프링 컨테이너가 관리하는 빈(Bean)*** 을 사용합니다.
       - 이 빈들은 애플리케이션의 다양한 컴포넌트(서비스, 리포지토리, 설정 등)를 의미하며, 스프링은 이들을 **팩토리 메서드(factory method)**를 통해 생성하거나 가져옵니다.
- * ==local_intlliJ_0612==
+ * ==local_GitHubDesktop22==
  * */
 
 @Slf4j
