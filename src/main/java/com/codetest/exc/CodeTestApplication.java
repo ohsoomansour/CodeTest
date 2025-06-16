@@ -26,10 +26,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class CodeTestApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CodeTestApplication.class, args); // Main Entry Point 역할 - 애플리케이션 초기화 실행 
-
-		new StreamArraySort1().solution();
-
+		SpringApplication.run(CodeTestApplication.class, args); // Main Entry Point 역할 - 애플리케이션 초기화 실행
+//		new StreamArraySort1().solution();
+		int[] resultArr1 = new HashSetArraySort03().Solution(new int[] {2, 1, 3, 4, 1});
+		log.info("resultArr1={}", resultArr1);
 	}
 	// 이 부분을 변경해서 실행해보세요.
 

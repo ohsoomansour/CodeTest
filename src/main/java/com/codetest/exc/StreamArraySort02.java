@@ -7,7 +7,7 @@ import java.util.Collections;
 /** 코딩테스트 합격자 되기 p.109-02문제
  * #Stream.toArray(IntFunction<A[]>)의 이해
  *  toArray(Integer[]::new) 는 메서드 method reference 문법
- *          > '배열 생성자 참조' : "해당 타입의 배열을 stream 크기에 맞게 생성해 달라"
+ *          > '배열 생성자 참조' : "Integer 타입의 배열을 stream 크기에 맞게 생성해 달라"
  *    -> Integer[]::new 이 조건을 만족하는 '함수형 interface로 자동 변환'
  *      *IntFuntion<A[]> generator (=함수형 interface)
  *     -> toArray(size -> new Integer[size])
