@@ -22,7 +22,10 @@ public class Board {
     private long BNo;
 
     private String title;
-
+    /**
+     * auth_id는 외부 키 -> Author 테이블의 id 컬럼을 reference한다.
+     * @주의: private String auth_id 선언 (x) auth_id 컬럼 매핑 중복 에러 발생시킨다.
+     * */
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "auth_id", referencedColumnName = "id") // Board.BNo → Author.id
     private Author author;
