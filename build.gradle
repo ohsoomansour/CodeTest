@@ -21,14 +21,16 @@ repositories {
 dependencies {
 
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     // Lombok 라이브러리 추가
     implementation 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
-	//Oracle && JPA
+	// JPA Auto Configuration- EntityManagerFactory와 EntityManager도 자동으로 생성
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'com.oracle.database.jdbc:ojdbc11:23.3.0.23.09'  // 오라클 JDBC 드라이버
+	// 오라클 JDBC 드라이버
+	implementation 'com.oracle.database.jdbc:ojdbc11:23.3.0.23.09'
 
 }
 

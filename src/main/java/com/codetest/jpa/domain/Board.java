@@ -1,4 +1,4 @@
-package com.codetest.exc;
+package com.codetest.jpa.domain;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -15,11 +15,10 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name="board")
+@Table(name="board")  //BOARD 테이블과 매핑됨을 나타냅니다.
 public class Board {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long bno;
+    @Id                                      //  IDENTITY는 자동으로 증가
+    @GeneratedValue(strategy = GenerationType.AUTO) // jpa가 db에 맞는 전략을 자동으로 선택
+    private long BNo;
     private String title;
-
 }
