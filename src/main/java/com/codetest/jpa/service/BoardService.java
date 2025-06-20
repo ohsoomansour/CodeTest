@@ -14,9 +14,9 @@ import java.util.Optional;
 @Service
 public class BoardService {
 
-    //EntityManager를 자동으로 주입
-    @PersistenceContext
-    private EntityManager em;
+//    //EntityManager를 자동으로 주입
+//    @PersistenceContext
+//    private EntityManager em;
 
     @Autowired
     private BoardRepository boardRepository;

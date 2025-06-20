@@ -20,5 +20,10 @@ public class Board {
     @Id                                      //  IDENTITY는 자동으로 증가
     @GeneratedValue(strategy = GenerationType.AUTO) // jpa가 db에 맞는 전략을 자동으로 선택
     private long BNo;
+
     private String title;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "auth_id", referencedColumnName = "id") // Board.BNo → Author.id
+    private Author author;
 }
